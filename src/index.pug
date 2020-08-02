@@ -5,49 +5,58 @@ html(lang="en")
         <meta content='IE=edge' http-equiv=X-UA-Compatible>
         <meta content='width=device-width, initial-scale=1' name=viewport>
         title Basic Example
-        link(rel='stylesheet',href='styles/styles.css')
+        link(rel='stylesheet', href='styles/styles.css')
         script(src='js/polyfill.min.js')
 
 body
-    .verticalGrid
-    a(href='#main', class='hiddenUnlessTabbed', tabindex='0') Skip Navigation
-    nav
-        a(href='#') Home
-        a(href='#') About Us
-        a(href='#') Contact Us
-    div(role='main' id='main')
-        .typography-examples
-            h1 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            h2 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            h3 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            h4 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            h5 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            h6 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            small ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            blockquote ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-        .paragraph-examples
-            h1 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
+    form#retouchCalc
+        h1 Scope of Work
+        small List minutes required for each step of production
 
-            h2 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
+        .flex-row
+                section
+                    h2 Per Image
 
-            h3 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
+                    label File Handling/Intake
+                        input#fileHandlingIntake('value'='0.5')
+                    label Raw Processing
+                        input#rawProcessing('value'='1')
+                    label Clipping/Isolation
+                        input#clippingIsolation('value'='0')
+                    label Cleanup
+                        input#cleanup('value'='5')
+                    label Color Correction
+                        input#colorCorrection('value'='1')
+                    label Integration (Composite)
+                        input#integration('value'='0')
+                    label Mood & Grace
+                        input#moodGrace('value'='0')
+                    label File Output
+                        input#fileOutput('value'='.5')
+                    label Delivery
+                        input#delivery('value'='.5')
 
-            h4 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
+                section.projectTotals
+                    h2 Summary
+                    label Total Images
+                        input#quantity('value'='1')
+                    label Hourly Rate
+                        input#perImageHourlyRate('value'='75')
+                    label Revisions (2 Rounds)
+                        input#revisionAllowance('value'='0.20')
+                    .totals
+                        p.total Total Minutes
+                            span#perImageTotalMinutes 0
+                        p.total Total Hours
+                            span#perImageTotalHours 0
+                        hr
+                        p.total 50% Upfront
+                            span#perImageTotalCostHalf $0
+                        hr
+                        p.total Total Cost
+                            span#perImageTotalCost $0
+                    p
+                        button#clearPerImage Reset
 
-            h5 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
-
-            h6 ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
-
-            small In 1992, Tim Berners-Lee circulated a document titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
-
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
-            blockquote ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz
-            p In 1992, Tim Berners-Lee <a href="#">circulated a document</a> titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
 script(src='js/app.js')
+

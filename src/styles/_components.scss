@@ -1,26 +1,52 @@
 [role*='main'] {
-  //this applies to everything
-  padding: $spaceUnit*2;
+	//this applies to everything
+	padding: $spaceUnit*2;
 
-  @media (min-width: 992px) {
-    max-width: 725px;
-  }
+	@media (min-width: 992px) {
+		max-width: 725px;
+	}
 }
 
 .hiddenUnlessTabbed {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 
-  &:focus {
-    position: relative;
-    left: initial;
-    top: initial;
-    width: initial;
-    height: initial;
-    overflow: initial;
-  }
+	&:focus {
+		position: relative;
+		left: initial;
+		top: initial;
+		width: initial;
+		height: initial;
+		overflow: initial;
+	}
+}
+
+.flex-row {
+	display: flex;
+}
+
+.totals {
+	border: 1px solid gray;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	padding: 8px;
+
+	.total {
+		@include headingBold;
+		font-size: 2rem;
+		line-height: 1.5;
+		margin: 0;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	button {
+		margin-top: 12px;
+	}
+
 }

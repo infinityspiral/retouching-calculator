@@ -1,34 +1,54 @@
 html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: relative;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: relative;
 }
 
 nav {
-  padding: $spaceUnit*2;
+	padding: $spaceUnit*2;
 
-  a {
-    margin-right: $spaceUnit*2;
+	a {
+		margin-right: $spaceUnit*2;
 
-  }
+	}
 }
 
 a {
-  color: $link;
-  text-decoration: none;
-  border-bottom: 2px dotted $link;
+	color: $link;
+	text-decoration: none;
+	border-bottom: 2px dotted $link;
 
-  &:hover {
-    font-style: italic;
-    color: $textContrastLow;
-    border-bottom: 1px solid $textContrastLow;
-  }
+	&:hover {
+		font-style: italic;
+		color: $textContrastLow;
+		border-bottom: 1px solid $textContrastLow;
+	}
+}
+
+form {
+	margin: 12px;
+
+	section {
+		margin-right: 24px;
+		margin-bottom: 24px;
+		padding-right: 24px;
+		border-right: 1px solid gray;
+	}
+}
+
+label {
+	display: block;
+	margin-bottom: 12px;
+
+	input {
+		display: block;
+	}
 }

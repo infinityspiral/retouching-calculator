@@ -1,5 +1,5 @@
 {
-  "name": "pug-scss-autoprefixer",
+  "name": "retouching-calculator",
   "version": "1.0.0",
   "description": "Starter for html output with inline script tag, useful for code snippet generation. SCSS will render into CSS and then have vender prefixes added if needed.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infinityspiral/pug-scss-autoprefixer.git"
+    "url": "git+https://github.com/infinityspiral/retouching-calculator.git"
   },
   "keywords": [
     "pug",
@@ -23,9 +23,9 @@
   "author": "Chris Norton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/infinityspiral/pug-scss-autoprefixer/issues"
+    "url": "https://github.com/infinityspiral/retouching-calculator/issues"
   },
-  "homepage": "https://github.com/infinityspiral/pug-scss-autoprefixer#readme",
+  "homepage": "https://github.com/infinityspiral/retouching-calculator#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
