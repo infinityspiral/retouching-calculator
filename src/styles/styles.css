@@ -418,11 +418,15 @@ a {
 form {
   margin: 12px; }
   form section {
-    padding: 12px;
-    border-left: 1px solid gray; }
+    width: 100%; }
     form section:first-of-type {
       padding-left: 0;
       border-left: none; }
+    @media (min-width: 1200px) {
+      form section {
+        width: auto;
+        padding: 12px;
+        border-left: 1px solid gray; } }
 
 label {
   display: block;
@@ -451,8 +455,9 @@ label {
     height: initial;
     overflow: initial; }
 
-.flex-row {
-  display: flex; }
+@media (min-width: 1200px) {
+  .flex-row {
+    display: flex; } }
 
 .totals {
   border: 1px solid gray;
