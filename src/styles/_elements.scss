@@ -37,10 +37,13 @@ form {
 	margin: 12px;
 
 	section {
-		margin-right: 24px;
-		margin-bottom: 24px;
-		padding-right: 24px;
-		border-right: 1px solid gray;
+		padding: 12px;
+		border-left: 1px solid gray;
+
+		&:first-of-type {
+			padding-left: 0;
+			border-left: none;
+		}
 	}
 }
 

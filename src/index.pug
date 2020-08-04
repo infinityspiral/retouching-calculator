@@ -14,36 +14,36 @@ body
         small List minutes required for each step of production
 
         .flex-row
-                section
+                section.taskTimes
                     h2 Per Image
 
                     label File Handling/Intake
-                        input#fileHandlingIntake('value'='0.5')
+                        input#fileHandlingIntake(value='0.5', type='number', step='.5')
                     label Raw Processing
-                        input#rawProcessing('value'='1')
+                        input#rawProcessing(value='1', type='number', step='.5')
                     label Clipping/Isolation
-                        input#clippingIsolation('value'='0')
+                        input#clippingIsolation(value='0', type='number', step='.5')
                     label Cleanup
-                        input#cleanup('value'='5')
+                        input#cleanup(value='5', type='number', step='.5')
                     label Color Correction
-                        input#colorCorrection('value'='1')
+                        input#colorCorrection(value='1', type='number', step='.5')
                     label Integration (Composite)
-                        input#integration('value'='0')
+                        input#integration(value='0', type='number', step='.5')
                     label Mood & Grace
-                        input#moodGrace('value'='0')
+                        input#moodGrace(value='0', type='number', step='.5')
                     label File Output
-                        input#fileOutput('value'='.5')
+                        input#fileOutput(value='0.5', type='number', step='.5')
                     label Delivery
-                        input#delivery('value'='.5')
+                        input#delivery(value='0.5', type='number', step='.5')
 
                 section.projectTotals
                     h2 Summary
                     label Total Images
-                        input#quantity('value'='1')
+                        input#quantity(value='1', type='number', step='1')
                     label Hourly Rate
-                        input#perImageHourlyRate('value'='75')
+                        input#perImageHourlyRate(value='75', type='number', step='5')
                     label Revisions (2 Rounds)
-                        input#revisionAllowance('value'='0.20')
+                        input#revisionAllowance(value='0.20', type='number', step='1')
                     .totals
                         p.total Total Minutes
                             span#perImageTotalMinutes 0
