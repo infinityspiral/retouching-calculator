@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
 
   const allInputs = document.querySelectorAll('input')
   allInputs.forEach(element => {
-    element.addEventListener('change',event => perImageBuildTotals())
+    element.addEventListener('change', event => perImageBuildTotals())
   })
 
   const perImageRound1Minutes = () => {
@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
   }
 
   const perImageRound1MinutesWithRevisions = () => {
-    const revisionMinutes = perImageRound1Minutes() * 0.20
+    const revisionMinutes = perImageRound1Minutes() * Number(document.querySelector('#revisionAllowance').value) / 100
     return revisionMinutes + perImageRound1Minutes()
   }
 

@@ -39,11 +39,11 @@ body
                 section.projectTotals
                     h2 Summary
                     label Total Images
-                        input#quantity(value='1', type='number', step='1')
+                        input#quantity(value='3', type='number', step='1')
                     label Hourly Rate
                         input#perImageHourlyRate(value='75', type='number', step='5')
-                    label Revisions (2 Rounds)
-                        input#revisionAllowance(value='0.20', type='number', step='1')
+                    label.percent Revisions % (2 Rounds)
+                        input#revisionAllowance(value='20', type='number', step='1')
                     .totals
                         p.total Total Minutes
                             span#perImageTotalMinutes 0
